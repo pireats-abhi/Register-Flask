@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Registrants</h1>
+    <ul>
+        {% for userDetail in userDetails %}
+        <li>{{ userDetail[1] }} ({{ userDetail[2] }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/register">Register</a>
+{% endblock %}
